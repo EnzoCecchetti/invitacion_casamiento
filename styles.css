@@ -164,7 +164,7 @@ html {
 
 /* Estilos para la sección con imagen de fondo */
 .gift-section {
-    background-image: url('/fotos/regalos.webp');
+    background-image: url('./fotos/regalos.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
