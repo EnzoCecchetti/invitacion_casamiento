@@ -74,9 +74,8 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
         const telefono = document.getElementById('telefono').value;
         const comida = document.getElementById('comida').value;
         const transporte = document.getElementById('transporte').value;
-        const cantidadAdultos = document.getElementById('cantidad_adultos').value;
         const cantidadNinos = document.getElementById('cantidad_ninos').value;
-        const acompanantes = document.getElementById('acompanantes').value;
+        
         
         const mensaje = `
             Confirmación de Asistencia:
@@ -85,16 +84,13 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
             Teléfono: ${telefono}
             Tipo de Comida: ${comida}
             Tipo de Mobilidad: ${transporte}
-            Cantidad de Adultos: ${cantidadAdultos}
             Cantidad de Niños menores de 5 años: ${cantidadNinos}
-            Acompañantes: ${acompanantes}
         `;
         enviarMensajeWhatsApp(mensaje);
     }
 });
 
 function enviarMensajeWhatsApp(mensaje) {
-    // Reemplaza 'tu_numero' con tu número de teléfono en el formato internacional sin el signo +
     const numeroDestino = '5492235134880'; // Número de WhatsApp
     const mensajeCodificado = encodeURIComponent(mensaje);
 
@@ -108,7 +104,6 @@ function enviarMensajeWhatsApp(mensaje) {
 function enviarMensajeNoAsistencia() {
     const mensaje = encodeURIComponent('Lamentablemente no podremos asistir.');
 
-    // Reemplaza 'tu_numero' con tu número de teléfono en el formato internacional sin el signo +
     const numeroDestino = '5492235134880'; // Número de WhatsApp
 
     // Construye el enlace de WhatsApp con el mensaje
