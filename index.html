@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+    <title>Invitación de Boda - Enzo y Rocio</title>
+    <link rel="shortcut icon" href="./fotos/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="roboto-regular-italic">
+    <div class="landing-page">
+        <div class="gif-overlay"></div>
+        <h1 class="great-vibes-regular"> Enzo y Ro</h1>
+        <div class="photo-container">
+            <h2 id="subtitle">¡Nos Casamos!</h2>
+            <div id="countdown"></div>
+            <button id="more-info-btn" data-section="ceremony-iglesia">MAS INFO</button>
+        </div>
+    </div>
+    <!-- Seccion de detalles de la boda -->
+    <div class="ceremony-section" id="ceremony-iglesia">
+        <div class="ceremony-header">
+            <div>
+                <img class="church-logo" src="./logos/iglesia.png" alt="iglesia">
+                <h2 class="church">Iglesia</h2>
+            </div>
+            <div class="church-container">
+                <img class="church-photo" src="./fotos/parroquia.jpg" alt="Foto de la iglesia">
+            </div>
+        </div>
+        <div class="event-details">
+            <p><strong>Fecha:</strong> 21 de Septiembre de 2024</p>
+            <p><strong>Hora:</strong> 19:00 </p>
+            <p><strong>Lugar:</strong> Parroquia San Carlos Borromeo</p>
+            <p class="adress-event"><strong>Dirección:</strong> Av. Juan B. Justo 2098</p>
+        </div>
+    </div>
+    <div class="ceremony-section" id="ceremony-fiesta">
+        <div class="ceremony-header">
+            <div>
+                <img class="fest-logo" src="./logos/celebracion.png" alt="fiesta">
+                <h2 class="fest">Fiesta</h2>
+            </div>
+            <div class="church-container">
+                <img class="ceremony-photo" src="/fotos/salon.jpg" alt="Foto del salón">
+            </div>
+        </div>
+        <div class="event-details">
+            <p><strong>Fecha:</strong> 21 de Septiembre de 2024</p>
+            <p><strong>Hora:</strong> 21:00 </p>
+            <p><strong>Lugar:</strong> Jano's Los Naranjos</p>
+            <p><strong>Dirección:</strong> Ruta 88 km. 3</p>
+            <p><strong>Dress Code:</strong> Formal</p>
+            <a href="https://www.google.com/maps/place/Jano's+Los+Naranjos/@-38.0091057,-57.6358327,17z/data=!3m1!4b1!4m6!3m5!1s0x9584d993fcdadd17:0x8b10e345910c4995!8m2!3d-38.00911!4d-57.6332524!16s%2Fg%2F11l1ygcmbp?entry=ttu"
+                target="_blank" class="btn">Llegar a la Fiesta</a>
+        </div>
+    </div>
+    <!-- Seccio de regalos -->
+    <section class="gift-section">
+        <img class="present-logo" src="./logos/regalo.png" alt="logo regalo">
+        <h2>Regalos</h2>
+        <p>El regalo es opcional, nos importa tu presencia. Si deseas regalarnos algo, te dejamos la siguiente
+            opción:</p>
+        <div class="accordion">
+            <button class="accordion-btn">Transferencia Bancaria</button>
+            <div class="panel">
+                <p><strong>Banco:</strong> BBVA</p>
+                <p><strong>Número de Cuenta:</strong> 90-457445/6</p>
+                <p><strong>ALIAS:</strong> CASAMIENTO.ENZO.RO</p>
+                <p><strong>Titular:</strong> Rocio Fretes</p>
+                <p class="cofre-details"><strong>También habrá la opción de un cofre en el salón</strong></p>
+            </div>
+        </div>
+    </section>
+    <section class="book-section">
+        <h2 class="book-title"> Book de fotos</h2>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img class="carrusel-img" src="./fotos/navidad.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carrusel-img" src="./fotos/sur.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="carrusel-img" src="./fotos/sur2.jpg" class="w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- formulario -->
+    <div class="rsvp-section">
+        <img class="check-logo" src="./logos/check.png" alt="check">
+        <h2>Confirmar Asistencia</h2>
+        <p>Por favor, confirma tu asistencia y completa el siguiente formulario:</p>
+        <form id="rsvp-form">
+            <select id="asistencia" name="asistencia">
+                <option value="" selected>Seleccionar opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select><br><br>
+            <div id="campos-adicionales" style="display: none;">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido"><br><br>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono"><br><br>
+                <label for="comida">Tipo de Comida:</label>
+                <select id="comida" name="comida">
+                    <option value="menu general">Menú General</option>
+                    <option value="menu infantil">Menú Infantil</option>
+                    <option value="vegetariano">Vegetariano</option>
+                    <option value="vegano">Vegano</option>
+                    <option value="celiaco">Celíaco</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+                <label for="transporte">Tipo de mobilidad</label>
+                <select id="transporte" name="transporte">
+                    <option value="Propia">Propia</option>
+                    <option value="Combi">Combi</option>
+                </select><br><br>
+                <label for="cantidad_adultos">Cantidad de Adultos:</label>
+                <input type="number" id="cantidad_adultos" name="cantidad_adultos" min="0" value="0"><br><br>
+                <label for="cantidad_ninos">Cantidad de Niños menores de 5 años:</label>
+                <input type="number" id="cantidad_ninos" name="cantidad_ninos" min="0" value="0"><br><br>
+                <textarea id="acompanantes" name="acompanantes" required placeholder="Nombre y Apellido de los acompañantes"
+                    rows="4" cols="50"></textarea><br><br>
+            </div>
+            <button type="submit">Confirmar Asistencia</button>
+        </form>
+    </div>
+    <!-- Adherir al Calendario -->
+    <div class="add-to-calendar">
+        <img class="calendar-logo" src="./logos/calendar.png" alt="">
+        <h2>Agrégalo a tu Calendario</h2>
+        <div class="add-to-calendar-button">
+            <add-to-calendar-button name="Casamiento de Enzo y Ro" startDate="2024-09-21" startTime="18:00"
+                endTime="23:30" timeZone="America/Argentina/Buenos_Aires" location="Jano's Los Naranjos"
+                description="Vení a disfrutar de este momento tan especial!" options="'Google','Apple','Outlook.com'"
+                lightMode="dark"></add-to-calendar-button>
+        </div>
+    </div>
+    <div class="final-section">
+        <img class="final-img" src="./fotos/foto pie de pag.jpg" alt="Foto final de la pareja">
+        <div class="h2-container">
+            <div class="gif-container">
+                <div class="gif-overlay2"></div>
+            </div>
+            <div >
+                <h2 class="great-vibes-regular">¡Gracias por acompañarnos en este momento tan especial!</h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

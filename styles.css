@@ -1,0 +1,452 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.great-vibes-regular {
+    padding-bottom: 450px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+}
+
+.landing-page {
+    position: relative; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./fotos/IMG_9382.JPEG');
+}
+
+.photo-container {
+    position: absolute; 
+    bottom: 50px; /* Ajusta esta distancia desde el fondo según sea necesario */
+    left: 50%;
+    transform: translate(-50%, 26%); 
+    text-align: center;
+    color: white;
+    z-index: 3; 
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    color: rgb(89, 97, 75);
+}
+
+#subtitle {
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+#countdown {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.gif-overlay {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    width: 15%;
+    height: 25%;
+    background: url('./logos/lluvia\ de\ corazones\ principal.gif') center center no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+#more-info-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgba(139, 151, 116, 1);
+    color: rgba(245, 245, 220, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 3;
+}
+
+#more-info-btn:hover {
+    background-color: rgb(103, 112, 85);
+}
+
+
+/* Estilos para la sección de la ceremonia */
+.ceremony-section {
+    text-align: center;
+    color: rgba(139, 151, 116, 1);
+    /* Añadido para asegurar que el color del texto sea negro */
+}
+
+/* Estilos para la cabecera de la ceremonia */
+.ceremony-header {
+    padding-bottom: 20px;
+    background-color: rgba(245, 245, 220, 1);
+}
+
+.ceremony-header h2 {
+    color: rgb(103, 112, 85);
+}
+
+#ceremony-iglesia .church-logo,
+#ceremony-fiesta .fest-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    filter: invert(100%);
+    background-color: rgba(139, 151, 116, 1);
+}
+
+.church-photo,
+.ceremony-photo {
+    max-width: 65%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 533px;
+}
+
+/* Estilos para los detalles del evento */
+.ceremony-section .event-details {
+    text-align: center;
+    color: rgba(139, 151, 116, 1);
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(245, 245, 220, 1);
+}
+
+
+
+/* Estilos para los detalles del evento */
+.event-details h2 {
+    color: rgba(139, 151, 116, 1);
+}
+
+.event-details p {
+    color: rgba(139, 151, 116, 1);
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.event-details .btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgba(139, 151, 116, 1);
+    color: rgba(245, 245, 220, 1);
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0px 2px 5px 0px rgb(90, 98, 75);
+}
+
+.event-details .btn:hover {
+    transform: scale(1.08, 1)
+}
+
+
+/* Estilos para la sección con imagen de fondo */
+.gift-section {
+    background-image: url('/fotos/regalos.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Fija la imagen de fondo */
+    padding: 10px 0;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrado del contenido */
+    color: rgba(245, 245, 220, 1);
+    /* Color del texto */
+}
+
+.gift-section .present-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón del acordeón */
+.accordion-btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: rgba(245, 245, 220, 1);
+    cursor: pointer;
+    padding: 10px;
+    width: auto;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el acordeón */
+.accordion {
+    text-align: center;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: rgba(245, 245, 220, 1);
+    width: 25%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.panel .cofre-details {
+    font-family: cursive;
+    font-size: smaller;
+    padding-top: 8px;
+}
+
+.book-section {
+    background-color: rgba(245, 245, 220, 1);
+    padding-bottom: 40px;
+}
+
+.book-title {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(103, 112, 85);
+}
+
+.carousel-inner {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.carousel-inner .carrusel-img {
+    max-width: 1000px;
+    object-fit: cover;
+    height: 600px;
+
+}
+
+.rsvp-section {
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgba(139, 151, 116, 1);
+}
+
+.check-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.rsvp-section h2 {
+    font-size: 28px;
+    color: rgba(245, 245, 220, 1);
+}
+
+.rsvp-section p {
+    font-size: 18px;
+    color: rgba(245, 245, 220, 1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(139, 151, 116, 1);
+    box-shadow: 0 0 10px rgba(139, 151, 116, 1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(139, 151, 116, 1);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: rgba(245, 245, 220, 1);
+    color: rgba(139, 151, 116, 1);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.7s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(139, 151, 116, 1);
+    color: rgba(245, 245, 220, 1);
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+/* Estilos para el botón de desplegable */
+.add-to-calendar {
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+}
+
+.add-to-calendar .calendar-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-radius: 45%;
+    background-color: rgba(139, 151, 116, 1);
+}
+
+.add-to-calendar h2 {
+    color: rgba(139, 151, 116, 1);
+    margin-bottom: 75px;
+}
+
+.add-to-calendar-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+.final-section {
+    text-align: center;
+}
+
+.final-img {
+    width: auto;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(139, 151, 116, 1);
+}
+
+.gif-container {
+    width: 35%;
+    /* Ancho del GIF */
+    height: 80%;
+    /* Altura del GIF */
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -70%);
+    /* Centra completamente */
+    overflow: hidden;
+    /* Evita que el GIF se desborde */
+}
+
+.gif-overlay2 {
+    width: 100%;
+    height: 100%;
+    background: url('./logos/lluvia\ de\ corazones\ pie.gif') center center no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.h2-container {
+    position: relative;
+    z-index: 2;
+}
+
+.h2-container .great-vibes-regular {
+    color: rgba(139, 151, 116, 1);
+    background-color: rgba(245, 245, 220, 1);
+    padding: 30px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1286px) and (min-width: 300px) {
+    .great-vibes-regular {
+        position: absolute; 
+        transform: translate(0%, 13%); 
+        font-size: 60px;
+    }
+
+    .photo-container {
+        position: absolute; 
+        transform: translate(-50%, 15%); 
+        text-align: center;
+        color: white;
+        z-index: 3; 
+    }
+
+    #subtitle {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-top: 80px;
+    }
+
+    #countdown {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .church-photo,
+    .ceremony-photo {
+        height: auto;
+    }
+
+    .final-img {
+        height: 350px;
+    }
+
+    #ceremony-iglesia .church-logo,
+    #ceremony-fiesta .fest-logo,
+    .gift-section .present-logo,
+    .add-to-calendar .calendar-logo {
+        width: 4.5rem;
+        height: auto;
+    }
+
+    .panel {
+        width: 80%;
+    }
+
+    .add-to-calendar h2 {
+        margin-bottom: 20px;
+    }
+
+    .h2-container .great-vibes-regular {
+        font-size: 30px;
+    }
+}
