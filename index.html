@@ -114,7 +114,7 @@
                 <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
                 <input type="text" id="apellido" name="apellido" required placeholder="Apellido"><br><br>
                 <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono"><br><br>
-                <label for="comida">Tipo de Comida:</label>
+                <label class="label_comida" for="comida">Tipo de Comida:</label>
                 <select id="comida" name="comida">
                     <option value="menu general">Menú General</option>
                     <option value="menu infantil">Menú Infantil</option>
@@ -123,15 +123,15 @@
                     <option value="celiaco">Celíaco</option>
                     <option value="otros">Otros</option>
                 </select><br><br>
-                <label for="transporte">Tipo de mobilidad</label>
+                <label class="label_transporte" for="transporte">Tipo de movilidad</label>
                 <select id="transporte" name="transporte">
                     <option value="Propia">Propia</option>
                     <option value="Combi">Combi</option>
                 </select><br><br>
-                <label for="cantidad_ninos">Cantidad de Niños menores de 5 años:</label>
+                <label class="label_ninos" for="cantidad_ninos">Cantidad de Niños menores de 5 años:</label>
                 <input type="number" id="cantidad_ninos" name="cantidad_ninos" min="0" value="0"><br><br>
             </div>
-            <button type="submit">Confirmar Asistencia</button>
+            <button type="submit"><strong>Confirmar Asistencia</strong></button>
         </form>
     </div>
     <!-- Adherir al Calendario -->

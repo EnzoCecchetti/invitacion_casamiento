@@ -207,7 +207,6 @@ html {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    color: rgba(245, 245, 220, 1);
     width: 25%;
     margin: 10px auto;
     text-align: center;
@@ -215,8 +214,13 @@ html {
 
 .panel .cofre-details {
     font-family: cursive;
-    font-size: smaller;
+    font-size: medium;
     padding-top: 8px;
+}
+
+.panel p {
+    color: rgba(245, 245, 220, 1);
+    font-style: italic;
 }
 
 .book-section {
@@ -275,6 +279,16 @@ form {
     border-radius: 10px;
     background-color: rgba(139, 151, 116, 1);
     box-shadow: 0 0 10px rgba(139, 151, 116, 1);
+}
+
+#rsvp-form #asistencia, #nombre, #apellido, #telefono, #comida, #transporte, #cantidad_ninos{
+    background-color: rgba(245, 245, 220, 1);
+    color: rgb(104, 114, 87);
+
+}
+
+#rsvp-form .label_comida, .label_transporte, .label_ninos{
+    color: rgba(245, 245, 220, 1)
 }
 
 label {
