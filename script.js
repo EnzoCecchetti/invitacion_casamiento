@@ -83,7 +83,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
             Apellido: ${apellido}
             Teléfono: ${telefono}
             Tipo de Comida: ${comida}
-            Tipo de Mobilidad: ${transporte}
+            Tipo de Movilidad: ${transporte}
             Cantidad de Niños menores de 5 años: ${cantidadNinos}
         `;
         enviarMensajeWhatsApp(mensaje);
